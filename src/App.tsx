@@ -15,7 +15,7 @@ type User = {
 
 type AuthContextType = {
   user: User | undefined;
-  signInWithGoogle: () => void;
+  signInWithGoogle: () => Promise<void>;
 }
 
 export const AuthContext = createContext({} as AuthContextType);
