@@ -23,12 +23,14 @@ export function Room() {
                     <textarea
                     placeholder="o que você quer perguntar?"
                     />
-                </form>
+                    <div className="form-footer">
+                        <div>
+                          <span>Para enviar uma pergunta, <button>faça seu login</button>.</span>
+                        </div>
 
-                <div className="form-footer">
-                    <span>Para enviar uma pergunta, <button>faça seu login</button>.</span>
-                    <Button type="submit">Enviar pergunta</Button>
-                </div>
+                        <Button type="submit" disabled={true}>Enviar pergunta</Button>
+                    </div>
+                </form>
             </main>
         </div>
     );
