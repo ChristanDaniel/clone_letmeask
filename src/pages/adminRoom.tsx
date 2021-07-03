@@ -71,6 +71,20 @@ export function AdminRoom() {
                                 >
                                     <img src={deleteImg} alt="Romever perguntas" />
                                 </button>
+
+                                <button
+                                  type="button"
+                                  onClick={() => handleDeleteQuestion(question.id)}
+                                >
+                                    <img src={deleteImg} alt="Romever perguntas" />
+                                </button>
+
+                                <button
+                                  type="button"
+                                  onClick={() => handleDeleteQuestion(question.id)}
+                                >
+                                    <img src={deleteImg} alt="Romever perguntas" />
+                                </button>
                             </Question>
                         );
                     })}
