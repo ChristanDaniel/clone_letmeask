@@ -1,6 +1,10 @@
 import { useHistory, useParams } from 'react-router-dom';
+
 import logoImg from '../assets/images/logo.svg';
-import deleteImg from '../assets/images/delete.svg'
+import deleteImg from '../assets/images/delete.svg';
+import checkImg from '../assets/images/check.svg';
+import answerImg from '../assets/images/answer.svg'
+
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
 import { RoomCode } from '../components/RoomCode';
@@ -69,14 +73,14 @@ export function AdminRoom() {
                                   type="button"
                                   onClick={() => handleDeleteQuestion(question.id)}
                                 >
-                                    <img src={deleteImg} alt="Romever perguntas" />
+                                    <img src={checkImg} alt="Romever perguntas" />
                                 </button>
 
                                 <button
                                   type="button"
                                   onClick={() => handleDeleteQuestion(question.id)}
                                 >
-                                    <img src={deleteImg} alt="Romever perguntas" />
+                                    <img src={answerImg} alt="Romever perguntas" />
                                 </button>
 
                                 <button
